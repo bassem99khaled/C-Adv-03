@@ -43,8 +43,28 @@
 
             #endregion
 
+            #region Delegate Example 02
+          // int[] Numbers = { 1, 2, 3 , 6 ,7  ,8, 0 ,5};
+          //
+          // CustomFunc<int> func = SortingTypes.ComareGet;
+          // SortingAlgorithms.BubbleSort(Numbers, func);
+          ////SortingAlgorithms.BubbleSort(Numbers, (x, y) => x > y);
+          //
+          //
+          // foreach (var numbers in Numbers) 
+          //                 {
+          //     Console.WriteLine(Numbers);
+          // }
+          //
 
-
+         ///  string[ ]  Names = [ "Omar" , "Nada" , "Amer" , " Bassem" , " Ahmed" , "Yaml"]
+         ///
+         ///  CustomFunc<string, string, bool> func02 = ComparsionTypes.Compareless;         
+         ///  SortingAlgorithms<string>.BubbleSort(Names, func02);
+         ///
+         ///  foreach(string Name in Names)
+         ///      Console.WriteLine(Name);
+            #endregion
 
 
 
