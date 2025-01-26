@@ -27,6 +27,14 @@ namespace C__Adv_03
             return Result;
         }
 
+        public static Action DelegateDoAction()
+        {
+
+            //return delegate () { Console.WriteLine("Hello World"); };
+            return () => Console.WriteLine("Hello World");
+        }
+
+
       //  public static List<int> FindEvens(List<int> Numbers)
      //   {
      //       List<int> Result = new List<int>();
