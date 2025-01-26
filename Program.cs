@@ -153,24 +153,69 @@ namespace C__Adv_03
 
 
             #region Built in Delegate
-        //
-        // Predicate<int> predicate = SomeFunctions.Test();
-        // predicate.Invoke(10);
-        //     predicate(10);
-        //
-        // Func<int, string> func = SomeFunctions.Cast;
-        // func.Invoke(10);
-        // func(10);
-        //
-        // Action action;
-        //
-        //
-        // Action<string> Action = SomeFunctions.Print;
-        // Action.Invoke("Ahmed");
-        // Action("Ahmed");
-        // #endregion
-        //
+            //
+            // Predicate<int> predicate = SomeFunctions.Test();
+            // predicate.Invoke(10);
+            //     predicate(10);
+            //
+            // Func<int, string> func = SomeFunctions.Cast;
+            // func.Invoke(10);
+            // func(10);
+            //
+            // Action action;
+            //
+            //
+            // Action<string> Action = SomeFunctions.Print;
+            // Action.Invoke("Ahmed");
+            // Action("Ahmed");
+            // #endregion
+            //
+            #endregion
 
+            #region Anonymous Function Vs Lambada Expression
+
+            //Anonymous Functions : C# 2.0 Feature ( .NET framwork 2.0 [ 2005])
+
+      //     Predicate<int> predicate = delegate (int Number) { retrun Number > 0; };
+      // predicate.Invoke(10);
+      //     predicate(10);
+      //
+      //     Func<int, string> func = delegate (int Number) { return Number.ToString(); };
+      // func.Invoke(10);
+      //     func(10);
+      //
+      //     Action action;
+      //
+      //
+      //     Action<string> Action= delegate (string Name) { Console.WriteLine("Hello"); };
+      // Action.Invoke("Ahmed");
+      //     Action("Ahmed");
+      //
+      //
+
+
+      ///    // Lambda Expression : C# 3.0 Feature ( >NET Framewrok 3.5 [2007])
+      ///    // => Call As 'FatArrow' and  Read as 'GoesTo'
+      ///
+      ///    var predicate = (int N) => N > 0;
+      ///    predicate.Invoke(10);
+      ///    predicate(10);
+      ///
+      ///    Func<int, string> func =  ( Number) => Number.ToString(); 
+      ///    func.Invoke(10);
+      ///    func(10);
+      ///
+      ///    Action action;
+      ///
+      ///
+      ///    Action<string> Action =  (string Name)=> Console.WriteLine("Hello"); 
+      ///    Action.Invoke("Ahmed");
+      ///    Action("Ahmed");
+
+            #endregion
+
+
+#endregion
 
 
 
