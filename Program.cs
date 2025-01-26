@@ -176,46 +176,77 @@ namespace C__Adv_03
 
             //Anonymous Functions : C# 2.0 Feature ( .NET framwork 2.0 [ 2005])
 
-      //     Predicate<int> predicate = delegate (int Number) { retrun Number > 0; };
-      // predicate.Invoke(10);
-      //     predicate(10);
-      //
-      //     Func<int, string> func = delegate (int Number) { return Number.ToString(); };
-      // func.Invoke(10);
-      //     func(10);
-      //
-      //     Action action;
-      //
-      //
-      //     Action<string> Action= delegate (string Name) { Console.WriteLine("Hello"); };
-      // Action.Invoke("Ahmed");
-      //     Action("Ahmed");
-      //
-      //
+            //     Predicate<int> predicate = delegate (int Number) { retrun Number > 0; };
+            // predicate.Invoke(10);
+            //     predicate(10);
+            //
+            //     Func<int, string> func = delegate (int Number) { return Number.ToString(); };
+            // func.Invoke(10);
+            //     func(10);
+            //
+            //     Action action;
+            //
+            //
+            //     Action<string> Action= delegate (string Name) { Console.WriteLine("Hello"); };
+            // Action.Invoke("Ahmed");
+            //     Action("Ahmed");
+            //
+            //
 
 
-      ///    // Lambda Expression : C# 3.0 Feature ( >NET Framewrok 3.5 [2007])
-      ///    // => Call As 'FatArrow' and  Read as 'GoesTo'
-      ///
-      ///    var predicate = (int N) => N > 0;
-      ///    predicate.Invoke(10);
-      ///    predicate(10);
-      ///
-      ///    Func<int, string> func =  ( Number) => Number.ToString(); 
-      ///    func.Invoke(10);
-      ///    func(10);
-      ///
-      ///    Action action;
-      ///
-      ///
-      ///    Action<string> Action =  (string Name)=> Console.WriteLine("Hello"); 
-      ///    Action.Invoke("Ahmed");
-      ///    Action("Ahmed");
+            ///    // Lambda Expression : C# 3.0 Feature ( >NET Framewrok 3.5 [2007])
+            ///    // => Call As 'FatArrow' and  Read as 'GoesTo'
+            ///
+            ///    var predicate = (int N) => N > 0;
+            ///    predicate.Invoke(10);
+            ///    predicate(10);
+            ///
+            ///    Func<int, string> func =  ( Number) => Number.ToString(); 
+            ///    func.Invoke(10);
+            ///    func(10);
+            ///
+            ///    Action action;
+            ///
+            ///
+            ///    Action<string> Action =  (string Name)=> Console.WriteLine("Hello"); 
+            ///    Action.Invoke("Ahmed");
+            ///    Action("Ahmed");
 
             #endregion
 
 
-#endregion
+            #region New Feature At Delagate C# 10.0
+
+            // var Keyward -> Implicity Types Local Variable [ c# 2.0]
+
+            //var Name = "Ahmed";
+
+            //Name = 22;
+
+          
+   
+        
+        //  var predicate = (int N) => N > 0;
+        //   // Predicate<int>
+        //
+        //  predicate.Invoke(10);
+        //  predicate(10);
+        //
+        //  var func =  ( Number) => Number.ToString(); 
+        //  // fFunc<int , string >
+        //   func.Invoke(10);
+        //  func(10);
+        //
+        //  Action action;
+        //
+        //
+        //  var Action =  (string Name)=> Console.WriteLine("Hello"); 
+        //  // action < string>
+        //   Action.Invoke("Ahmed");
+        //  Action("Ahmed");
+
+
+            #endregion
 
 
 
