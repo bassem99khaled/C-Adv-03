@@ -223,32 +223,55 @@ namespace C__Adv_03
 
             //Name = 22;
 
-          
-   
-        
-        //  var predicate = (int N) => N > 0;
-        //   // Predicate<int>
-        //
-        //  predicate.Invoke(10);
-        //  predicate(10);
-        //
-        //  var func =  ( Number) => Number.ToString(); 
-        //  // fFunc<int , string >
-        //   func.Invoke(10);
-        //  func(10);
-        //
-        //  Action action;
-        //
-        //
-        //  var Action =  (string Name)=> Console.WriteLine("Hello"); 
-        //  // action < string>
-        //   Action.Invoke("Ahmed");
-        //  Action("Ahmed");
+
+
+
+            //  var predicate = (int N) => N > 0;
+            //   // Predicate<int>
+            //
+            //  predicate.Invoke(10);
+            //  predicate(10);
+            //
+            //  var func =  ( Number) => Number.ToString(); 
+            //  // fFunc<int , string >
+            //   func.Invoke(10);
+            //  func(10);
+            //
+            //  Action action;
+            //
+            //
+            //  var Action =  (string Name)=> Console.WriteLine("Hello"); 
+            //  // action < string>
+            //   Action.Invoke("Ahmed");
+            //  Action("Ahmed");
 
 
             #endregion
 
+            #region List methods That Take Fucntion as Parameter
 
+          //  List<int> Numbers = new List<int>() { 1, 3, 5, 6, 3, , 7, 8 };
+
+            //  List<int> OddNumbers = FindElements(Numbers, (Number) => Number % 2 == 1; );
+
+            
+            //   List<int> OddNumbers = Numbers.FindAll(N => N % 2 == 1);
+            
+            //   List<int> OddNumbers = Numbers.Find(N => N % 2 == 1);
+            
+            //   List<int> OddNumbers = Numbers.FindLast(N => N % 2 == 1);
+            
+            //     List<int> OddNumbers = Numbers.Exists(X => X > 0);
+          
+            // Numbers.Foreach(Hamda =>
+            // {
+          //     Numbers += 10;
+          // });
+
+
+         //  foreach (int odd in OddNumbers)
+         //      Console.WriteLine(odd);
+            #endregion
 
         }
 
