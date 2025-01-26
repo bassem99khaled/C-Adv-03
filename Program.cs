@@ -136,15 +136,15 @@ namespace C__Adv_03
             #endregion
 
             #region Find NAmes with legth more than 04
-         //  List<string> Names = new List<string>(10) { "Ahmed ", " Nadia", "BASSEM", "Mahmoud" };
-         //
-         //  List<string> NamesWithLenghtMoreThan04 = FindNumbers<T>(Names, ConditionFunctions.IsLengthEquals04);
-         //
-         //  foreach (int number in NamesWithLenghtMoreThan04)
-         //      Console.WriteLine(number);
-         //
-         //  Console.WriteLine();
-         //  Console.WriteLine();
+            //  List<string> Names = new List<string>(10) { "Ahmed ", " Nadia", "BASSEM", "Mahmoud" };
+            //
+            //  List<string> NamesWithLenghtMoreThan04 = FindNumbers<T>(Names, ConditionFunctions.IsLengthEquals04);
+            //
+            //  foreach (int number in NamesWithLenghtMoreThan04)
+            //      Console.WriteLine(number);
+            //
+            //  Console.WriteLine();
+            //  Console.WriteLine();
 
 
             #endregion
@@ -152,7 +152,24 @@ namespace C__Adv_03
             #endregion
 
 
-
+            #region Built in Delegate
+        //
+        // Predicate<int> predicate = SomeFunctions.Test();
+        // predicate.Invoke(10);
+        //     predicate(10);
+        //
+        // Func<int, string> func = SomeFunctions.Cast;
+        // func.Invoke(10);
+        // func(10);
+        //
+        // Action action;
+        //
+        //
+        // Action<string> Action = SomeFunctions.Print;
+        // Action.Invoke("Ahmed");
+        // Action("Ahmed");
+        // #endregion
+        //
 
 
 
@@ -198,7 +215,21 @@ namespace C__Adv_03
         public static bool NumberDivisibleBySeven(int Number) => Number % 7 == 0;
 
         public static bool IsLengthEquals04(string Name) => Name?.Length > 4;
+
+
     }
+
+    class SomeFunctions
+    {
+        public static bool Test(int Number )
+        { retrun Number > 0; }
+
+        public static string Cast(int Number) { return Number.ToString(); }
+    
+        public static void Print() { Console.WriteLine("Hello"); }
+
+    }
+
 
 }
 
